@@ -4,14 +4,18 @@ von Neumann construction of natural numbers within set theory: auto converter of
 */
 
 
-public class set {
+public class Set {
     public static Scanner in = new Scanner(System.in);
     public static final String emptySet = "∅"; //0
 
     public static void main(String[] args) {
+        int answer = 0;
 
-        System.out.print("Enter a natural number (>0) n to be written in terms of empty sets: ");
-        number(in.nextInt());
+        while(answer <= 0) {
+            System.out.print("Enter a natural number (>0) n to be written in terms of empty sets: ");
+            answer = in.nextInt();
+        }
+        number(answer);
 
     }
 
