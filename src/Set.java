@@ -56,6 +56,7 @@ public class Set {
       3 = {∅, {∅}, {∅, {∅}}}
 
       Written using a string and recursion this time. 
+    limit (before my computer gets a stack overflow error due to all the recursion) is between 12500 and 13280
    */
     public static void number2 (int n) {
         System.out.print(number2(n-1, "∅"));
